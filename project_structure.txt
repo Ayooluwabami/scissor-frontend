@@ -1,0 +1,28 @@
+frontend/
+├── public/                  # Public assets
+│   ├── index.html           # Main HTML file
+│   ├── favicon.ico          # Favicon
+│   ├── logo192.png          # Logo for 192x192 resolution
+│   ├── logo512.png          # Logo for 512x512 resolution
+├── src/                     # Source files
+│   ├── components/          # React components
+│   │   ├── Header.tsx       # Header component
+│   │   ├── Footer.tsx       # Footer component
+│   │   ├── UrlShortener.tsx # URL Shortener component
+│   ├── pages/               # Page components
+│   │   ├── Home.tsx         # Home page
+│   │   ├── About.tsx        # About page
+│   ├── services/            # API services
+│   │   ├── apiService.ts    # Service for API calls
+│   ├── App.tsx              # Main app component
+│   ├── index.tsx            # Entry point
+│   ├── setupTests.ts        # Setup for Jest tests
+├── App.css                  # Styles for App component
+├── index.css                # Global styles
+├── logo.svg                 # SVG logo
+├── .gitignore               # Git ignore file
+├── package-lock.json        # Lock file for package dependencies
+├── package.json             # Frontend package configuration
+├── README.md                # Frontend documentation
+├── tsconfig.json            # TypeScript configuration for frontend
+├── .env                     # Environment variables
