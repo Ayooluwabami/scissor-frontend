@@ -5,7 +5,8 @@ const UrlShortener: React.FC = () => {
   const [url, setUrl] = useState('');
   const [shortUrl, setShortUrl] = useState('');
 
-  const handleShorten = async () => {
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
     try {
       const response = await shortenUrl(url);
       setShortUrl(response.data.shortUrl);
@@ -16,13 +17,15 @@ const UrlShortener: React.FC = () => {
 
   return (
     <div>
-      <input
-        type="text"
-        value={url}
-        onChange={(e) => setUrl(e.target.value)}
-        placeholder="Enter URL"
-      />
-      <button onClick={handleShorten}>Shorten</button>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          value={url}
+          onChange={(e) => setUrl(e.target.value)}
+          placeholder="Enter URL"
+        />
+        <button type="submit">Shorten</button>
+      </form>
       {shortUrl && <p>Short URL: {shortUrl}</p>}
     </div>
   );

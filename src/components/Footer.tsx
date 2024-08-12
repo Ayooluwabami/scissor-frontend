@@ -3,7 +3,7 @@ import React from 'react';
 const Footer: React.FC = () => {
   return (
     <footer>
-      <p>© 2024 Scissor URL Shortener. All rights reserved.</p>
+      <p>&copy; 2024 My App</p>
     </footer>
   );
 };
