@@ -26,3 +26,4 @@ frontend/
 ├── README.md                # Frontend documentation
 ├── tsconfig.json            # TypeScript configuration for frontend
 ├── .env                     # Environment variables
+├── vercel.json
