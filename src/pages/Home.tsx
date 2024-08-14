@@ -1,39 +1,29 @@
 import React from 'react';
+import './Home.css';
 
 function Home() {
   return (
-    <div>
-      <h1>Welcome to the Scissor URL Shortener</h1>
-      <p>
-        Scissor helps you shorten and manage your URLs effortlessly. Simply
-        enter a long URL below to get a shortened version that you can easily
-        share.
+    <div className="home-container">
+      <h1 className="home-heading">Welcome to the Scissor URL Shortener</h1>
+      <p className="home-description">
+        Scissor helps you shorten and manage your URLs effortlessly. Simply enter a long URL below to get a shortened version that you can easily share.
       </p>
-      <div className="url-shortener-form">
-        <input
-          type="text"
-          placeholder="Enter URL here..."
-          aria-label="Enter URL"
-        />
-        <button>Shorten</button>
+      <div className="home-input-container">
+        <input type="text" className="home-input" placeholder="Enter URL here..." />
+        <button className="home-button">Shorten</button>
       </div>
-      <section className="features">
-        <h2>Features</h2>
-        <ul>
-          <li>Shorten long URLs into compact links.</li>
-          <li>Generate QR codes for your shortened URLs.</li>
-          <li>Track link analytics to see how many times your link has been clicked.</li>
-          <li>Customize your shortened URLs for easier sharing.</li>
-        </ul>
-      </section>
-      <section className="cta">
-        <h2>Get Started Today!</h2>
-        <p>
-          Ready to simplify your links? Start using Scissor now and experience
-          the power of easy URL management.
-        </p>
-        <button>Get Started</button>
-      </section>
+      <div className="features">
+        <div className="feature-item">Shorten long URLs into compact links.</div>
+        <div className="feature-item">Generate QR codes for your shortened URLs.</div>
+        <div className="feature-item">Track link analytics to see how many times your link has been clicked.</div>
+        <div className="feature-item">Customize your shortened URLs for easier sharing.</div>
+      </div>
+      <div className="get-started">
+        <button className="get-started-button">Get Started</button>
+      </div>
+      <footer>
+        <p>© 2024 My App</p>
+      </footer>
     </div>
   );
 }
